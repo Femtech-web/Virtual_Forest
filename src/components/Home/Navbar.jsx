@@ -25,7 +25,7 @@ const Navbar = () => {
       
       if(accounts.length){
         setCurrentAccount(accounts[0]);
-        await localStorage.setItem('wallet', accounts[0]);
+        await JSON.stringify(localStorage.setItem('wallet', accounts[0]));
         
         navigate('/dashboard');
       } else {
