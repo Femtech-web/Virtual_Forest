@@ -1,0 +1,25 @@
+.icon-bg{
+    background: rgba(56, 126, 157, 0.46);
+}
+
+.icon-bg2{
+    background: rgba(172, 172, 172, 0.53);
+}
+
+.icon-bg3{
+    background: rgba(208, 153, 81, 0.53);
+}
+
+.Grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(4.625rem, 1fr));
+    gap: 14px;
+}
+
+.img-container{
+    border-radius: 10.34375rem 10.34375rem 0rem 0rem;
+    border: 2px solid rgba(36, 39, 96, 0.31);
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

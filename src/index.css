@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.inter{
+  font-family: 'Inter', sans-serif;
+}
+
+.Kaisei-Opti{
+  font-family: 'Kaisei Opti', sans-serif;
+}
+
+.poppins{
+  font-family: 'Poppins', sans-serif;
+}
