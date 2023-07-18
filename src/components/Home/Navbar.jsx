@@ -25,9 +25,9 @@ const Navbar = () => {
       
       if(accounts.length){
         setCurrentAccount(accounts[0]);
-        await JSON.stringify(localStorage.setItem('wallet', accounts[0]));
+        localStorage.setItem('wallet', accounts[0]);
         
-        navigate('/dashboard');
+        window.location.reload();
       } else {
         navigate('/')
         console.log('No ethereum accounts found')
@@ -58,7 +58,7 @@ const Navbar = () => {
           <Button 
             text={wallet ? shorten(wallet) : 'Connect Wallet'} 
             otherStyles={navbarStyles.btn}
-            handleClick={connectWallet} 
+            handleClick={!currentAccount && connectWallet} 
           />
           <Link to='/dashboard'>
             <span className={navbarStyles.userImg}>

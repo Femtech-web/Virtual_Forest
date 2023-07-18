@@ -8,11 +8,8 @@ import Homepage from './pages/Homepage';
 import Dashboard from './pages/Dashboard';
 
 const App = () => {
-  const [ wallet, setWallet ] = useState(localStorage.getItem('wallet'))
+  const  wallet = localStorage.getItem('wallet') || null;
 
-  useEffect(() => {
-    setWallet(localStorage.getItem('wallet'))
-  }, [wallet, setWallet])
   
   return (
     <Router basename='/'>
